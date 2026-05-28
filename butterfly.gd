@@ -18,6 +18,7 @@ func _process(delta):
 #	Disaster.
 	var screen_size = get_viewport_rect().size 
 	var input_direction = Vector2.ZERO
+	var margin = 24
 	# (x, y) : (0,0) stay 
 #	W = (0, -1)
 #	S = (0, 1)
@@ -70,8 +71,8 @@ func _process(delta):
 	position += velocity * delta
 	
 	# clamp inside screen_size 
-	position.x = clamp(position.x, 0, screen_size.x)
-	position.y = clamp(position.y, 0, screen_size.y)
+	position.x = clamp(position.x, margin, screen_size.x - margin)
+	position.y = clamp(position.y, margin, screen_size.y - margin)
 
 	# rotate toward movement
 	# velocity.angle() : 0 radians = pointing right angle 0 points along positive X axis 
