@@ -127,13 +127,13 @@ position = Vector2(585, 324)
 texture = ExtResource("1_tlwt5")
 
 [node name="Flower1" parent="." instance=ExtResource("4_aqk2v")]
-position = Vector2(119, 585)
+position = Vector2(77, 575)
 
 [node name="Flower2" parent="." instance=ExtResource("4_aqk2v")]
-position = Vector2(72, 169)
+position = Vector2(103, 183)
 
 [node name="Flower3" parent="." instance=ExtResource("4_aqk2v")]
-position = Vector2(400, 585)
+position = Vector2(689, 568)
 
 [node name="Butterfly" type="AnimatedSprite2D" parent="."]
 position = Vector2(264, 275)
