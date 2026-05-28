@@ -6,25 +6,43 @@ extends AnimatedSprite2D
 @export var friction := 250.0
 @export var rotation_speed := 5.0
 
+var near_flower := false 
 var nearby_flower = null
 var velocity := Vector2.ZERO
+var is_hiding := false 
 
 func _process(delta):
 	# delta = time since last frame 
 	# might be ~ 0.016 at 60 FPS
 	# without delta it would move:
-#	faster on fast computers,
-#	slower on slow computers.
-#	Disaster.
+	# faster on fast computers,
+	# slower on slow computers.
+	# Disaster.
 	var screen_size = get_viewport_rect().size 
-	var input_direction = Vector2.ZERO
 	var margin = 24
+	var input_direction = Vector2.ZERO
 	# (x, y) : (0,0) stay 
 #	W = (0, -1)
 #	S = (0, 1)
 #	A = (-1, 0)
 #	D = (1, 0)
-
+	
+	# hiding mechanic 
+	if Input.is_key_pressed(KEY_R) && near_flower: 
+		is_hiding = true 
+	else: 
+		is_hiding = false
+		
+	if is_hiding: 
+		modulate.a = 0.5
+		stop()
+		# modulate.a => opacity 
+	else: 
+		modulate.a = 1.0 
+		if not is_playing():
+			play("fly")
+	
+	# direction with WSAD KEYS: 
 	if Input.is_key_pressed(KEY_W):
 		input_direction.y -= 1
 
@@ -85,8 +103,16 @@ func _process(delta):
 			rotation_speed * delta * 1.7
 		)
 
-
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	# print("touching flower")
 	if area.has_method("react"):
 		area.react()
+		
+	if area.is_in_group("flowers"):
+		near_flower = true 
+		print("entered flower") 
+
+func _on_area_2d_area_exited(area: Area2D) -> void:
+	if area.is_in_group("flowers"):
+		near_flower = false 
+		print("left flower")

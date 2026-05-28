@@ -7,7 +7,7 @@
 radius = 60.972126
 height = 149.80052
 
-[node name="Flower" type="Area2D"]
+[node name="Flower" type="Area2D" groups=["flowers"]]
 script = ExtResource("1_i6lw5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

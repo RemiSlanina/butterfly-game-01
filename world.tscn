@@ -1,9 +1,10 @@
-[gd_scene load_steps=21 format=3 uid="uid://6i1bpl0g753j"]
+[gd_scene load_steps=23 format=3 uid="uid://6i1bpl0g753j"]
 
 [ext_resource type="Texture2D" uid="uid://h5teyu0gupn" path="res://scene-1200x700-far-background.png" id="1_tlwt5"]
 [ext_resource type="Texture2D" uid="uid://dxw2d3jw6r84x" path="res://Butterfly-Sprite-01.svg" id="2_fj7yv"]
 [ext_resource type="Script" uid="uid://dai4hs8f2tgl7" path="res://butterfly.gd" id="3_tlwt5"]
 [ext_resource type="PackedScene" uid="uid://cio0c3j1nv4kd" path="res://flowers/flower.tscn" id="4_aqk2v"]
+[ext_resource type="Texture2D" uid="uid://b1pl2epuf8py3" path="res://flowers/particle-01.svg" id="5_036b0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tlwt5"]
 atlas = ExtResource("2_fj7yv")
@@ -120,6 +121,17 @@ animations = [{
 radius = 19.026306
 height = 57.819855
 
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_aqk2v"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(400.69, 10, 1)
+direction = Vector3(-1, 1, 0)
+spread = 20.0
+initial_velocity_min = 5.0
+initial_velocity_max = 15.0
+gravity = Vector3(0, 98, 0)
+scale_max = 3.0
+
 [node name="World" type="Node2D"]
 
 [node name="TempBackground" type="Sprite2D" parent="."]
@@ -148,4 +160,13 @@ script = ExtResource("3_tlwt5")
 rotation = 1.601002
 shape = SubResource("CapsuleShape2D_aqk2v")
 
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+position = Vector2(385, -56)
+rotation = -3.1598566
+amount = 20
+texture = ExtResource("5_036b0")
+lifetime = 8.0
+process_material = SubResource("ParticleProcessMaterial_aqk2v")
+
 [connection signal="area_entered" from="Butterfly/Area2D" to="Butterfly" method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Butterfly/Area2D" to="Butterfly" method="_on_area_2d_area_exited"]
