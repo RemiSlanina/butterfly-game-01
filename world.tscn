@@ -1,8 +1,9 @@
-[gd_scene load_steps=19 format=3 uid="uid://6i1bpl0g753j"]
+[gd_scene load_steps=21 format=3 uid="uid://6i1bpl0g753j"]
 
 [ext_resource type="Texture2D" uid="uid://h5teyu0gupn" path="res://scene-1200x700-far-background.png" id="1_tlwt5"]
 [ext_resource type="Texture2D" uid="uid://dxw2d3jw6r84x" path="res://Butterfly-Sprite-01.svg" id="2_fj7yv"]
 [ext_resource type="Script" uid="uid://dai4hs8f2tgl7" path="res://butterfly.gd" id="3_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://cio0c3j1nv4kd" path="res://flowers/flower.tscn" id="4_aqk2v"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tlwt5"]
 atlas = ExtResource("2_fj7yv")
@@ -115,11 +116,24 @@ animations = [{
 "speed": 28.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_aqk2v"]
+radius = 19.026306
+height = 57.819855
+
 [node name="World" type="Node2D"]
 
 [node name="TempBackground" type="Sprite2D" parent="."]
 position = Vector2(585, 324)
 texture = ExtResource("1_tlwt5")
+
+[node name="Flower1" parent="." instance=ExtResource("4_aqk2v")]
+position = Vector2(119, 585)
+
+[node name="Flower2" parent="." instance=ExtResource("4_aqk2v")]
+position = Vector2(72, 169)
+
+[node name="Flower3" parent="." instance=ExtResource("4_aqk2v")]
+position = Vector2(400, 585)
 
 [node name="Butterfly" type="AnimatedSprite2D" parent="."]
 position = Vector2(264, 275)
@@ -127,3 +141,11 @@ sprite_frames = SubResource("SpriteFrames_wse8f")
 animation = &"fly"
 autoplay = "fly"
 script = ExtResource("3_tlwt5")
+
+[node name="Area2D" type="Area2D" parent="Butterfly"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Butterfly/Area2D"]
+rotation = 1.601002
+shape = SubResource("CapsuleShape2D_aqk2v")
+
+[connection signal="area_entered" from="Butterfly/Area2D" to="Butterfly" method="_on_area_2d_area_entered"]

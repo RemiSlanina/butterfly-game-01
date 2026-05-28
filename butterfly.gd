@@ -6,6 +6,7 @@ extends AnimatedSprite2D
 @export var friction := 250.0
 @export var rotation_speed := 5.0
 
+var nearby_flower = null
 var velocity := Vector2.ZERO
 
 func _process(delta):
@@ -77,3 +78,9 @@ func _process(delta):
 			velocity.angle() + deg_to_rad(90),
 			rotation_speed * delta * 1.7
 		)
+
+
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	print("touching flower")
+	if area.has_method("react"):
+		area.react()
