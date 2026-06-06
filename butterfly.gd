@@ -6,6 +6,7 @@ extends AnimatedSprite2D
 @export var friction := 250.0
 @export var rotation_speed := 5.0
 
+var in_danger := false 
 var near_flower := false 
 var nearby_flower = null
 var velocity := Vector2.ZERO
@@ -61,7 +62,7 @@ func _process(delta):
 	var current_acceleration = acceleration
 	var current_max_speed = max_speed
 
-	if Input.is_key_pressed(KEY_SHIFT):
+	if Input.is_key_pressed(KEY_SHIFT) || in_danger:
 		current_acceleration *= 1.8 
 		current_max_speed *= 2.5 
 	
