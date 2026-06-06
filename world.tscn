@@ -1,8 +1,8 @@
 [gd_scene load_steps=25 format=3 uid="uid://6i1bpl0g753j"]
 
 [ext_resource type="Script" uid="uid://cets65o6gidb2" path="res://world.gd" id="1_pkg7o"]
-[ext_resource type="Texture2D" uid="uid://h5teyu0gupn" path="res://scene-1200x700-far-background.png" id="1_tlwt5"]
 [ext_resource type="Texture2D" uid="uid://dxw2d3jw6r84x" path="res://Butterfly-Sprite-01.svg" id="2_fj7yv"]
+[ext_resource type="Texture2D" uid="uid://csf5nm6ybgth8" path="res://doodle-004_001-1240x877.png" id="3_pkg7o"]
 [ext_resource type="Script" uid="uid://dai4hs8f2tgl7" path="res://butterfly.gd" id="3_tlwt5"]
 [ext_resource type="PackedScene" uid="uid://cio0c3j1nv4kd" path="res://flowers/flower.tscn" id="4_aqk2v"]
 [ext_resource type="Texture2D" uid="uid://b1pl2epuf8py3" path="res://flowers/particle-01.svg" id="5_036b0"]
@@ -140,7 +140,7 @@ bird_scene = ExtResource("6_dwbse")
 
 [node name="TempBackground" type="Sprite2D" parent="."]
 position = Vector2(585, 324)
-texture = ExtResource("1_tlwt5")
+texture = ExtResource("3_pkg7o")
 
 [node name="Flower1" parent="." instance=ExtResource("4_aqk2v")]
 position = Vector2(77, 575)
