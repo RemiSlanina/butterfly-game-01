@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="3"
-   height="3"
-   viewBox="0 0 0.79374998 0.79374998"
+   width="9"
+   height="9"
+   viewBox="0 0 2.3812499 2.3812499"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
@@ -25,8 +25,8 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="px"
      inkscape:zoom="45.254834"
-     inkscape:cx="-1.1600971"
-     inkscape:cy="1.0054175"
+     inkscape:cx="1.5688932"
+     inkscape:cy="2.2870485"
      inkscape:window-width="1874"
      inkscape:window-height="1011"
      inkscape:window-x="46"
@@ -88,28 +88,15 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-386.26713,-123.91949)">
-    <g
-       id="g8"
-       transform="translate(0.01415044,-0.00238724)">
-      <rect
-         style="mix-blend-mode:normal;fill:#fff6d5;stroke-width:0.264583;filter:url(#filter1-9)"
-         id="rect7"
-         width="2.6458333"
-         height="2.6458333"
-         x="379.44284"
-         y="179.1097"
-         ry="1.3229166"
-         transform="matrix(0.15633672,0,0,0.15633672,327.07496,96.063288)" />
-      <rect
-         style="mix-blend-mode:normal;fill:#fff6d5;stroke-width:0.264583;filter:url(#filter1-9)"
-         id="rect8"
-         width="2.6458333"
-         height="2.6458333"
-         x="379.44284"
-         y="179.1097"
-         ry="1.3229166"
-         transform="matrix(0.15633672,0,0,0.15633672,327.16941,96.157731)" />
-    </g>
+     transform="translate(-385.5426,-123.11312)">
+    <rect
+       style="mix-blend-mode:normal;fill:#fff6d5;stroke-width:0.264583;filter:url(#filter1-9)"
+       id="rect7"
+       width="2.6458333"
+       height="2.6458333"
+       x="379.44284"
+       y="179.1097"
+       ry="1.3229166"
+       transform="matrix(0.61547639,0,0,0.61547639,152.38089,13.251729)" />
   </g>
 </svg>
