@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csf5nm6ybgth8"
-path="res://.godot/imported/doodle-004_001-1240x877.png-4a2e24e9da97a9c7fe84e01c5c04938b.ctex"
+uid="uid://cu6jvtsh8ks7q"
+path="res://.godot/imported/doodle-004_001-1240x877.png-138fdb55521ed833dc6d0797c5914be0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://doodle-004_001-1240x877.png"
-dest_files=["res://.godot/imported/doodle-004_001-1240x877.png-4a2e24e9da97a9c7fe84e01c5c04938b.ctex"]
+source_file="res://assets/background/doodle-004_001-1240x877.png"
+dest_files=["res://.godot/imported/doodle-004_001-1240x877.png-138fdb55521ed833dc6d0797c5914be0.ctex"]
 
 [params]
 

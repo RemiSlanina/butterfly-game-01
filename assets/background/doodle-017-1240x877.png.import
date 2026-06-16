@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1d8uj5v5e7nu"
-path="res://.godot/imported/flower-01-140x140.svg-659c3f9e940e89379d88377e866771a8.ctex"
+uid="uid://dm6s0clxud5n3"
+path="res://.godot/imported/doodle-017-1240x877.png-445ea572f088d8e5d8aeec2b34824b6d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://flower-01-140x140.svg"
-dest_files=["res://.godot/imported/flower-01-140x140.svg-659c3f9e940e89379d88377e866771a8.ctex"]
+source_file="res://assets/background/doodle-017-1240x877.png"
+dest_files=["res://.godot/imported/doodle-017-1240x877.png-445ea572f088d8e5d8aeec2b34824b6d.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fsip3mx52cku"
-path="res://.godot/imported/dummy-bird-01.svg-7bd1b883a053e76a92d9ef9c3d450cff.ctex"
+uid="uid://m2hjcrkkkcbf"
+path="res://.godot/imported/flower-placeholder.png-dbee6b94ea30d3bc21e27fd3f3846faa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dummy-bird-01.svg"
-dest_files=["res://.godot/imported/dummy-bird-01.svg-7bd1b883a053e76a92d9ef9c3d450cff.ctex"]
+source_file="res://assets/flowers/flower-placeholder.png"
+dest_files=["res://.godot/imported/flower-placeholder.png-dbee6b94ea30d3bc21e27fd3f3846faa.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

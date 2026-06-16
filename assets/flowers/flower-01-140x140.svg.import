@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxw2d3jw6r84x"
-path="res://.godot/imported/Butterfly-Sprite-01.svg-bb20caf33b2983bbccc6154e8ad4a235.ctex"
+uid="uid://cy8flslwknope"
+path="res://.godot/imported/flower-01-140x140.svg-b1b9a74ba919774ab83308566f7fc338.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Butterfly-Sprite-01.svg"
-dest_files=["res://.godot/imported/Butterfly-Sprite-01.svg-bb20caf33b2983bbccc6154e8ad4a235.ctex"]
+source_file="res://assets/flowers/flower-01-140x140.svg"
+dest_files=["res://.godot/imported/flower-01-140x140.svg-b1b9a74ba919774ab83308566f7fc338.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bttwol7rttpoi"
-path="res://.godot/imported/doodle-011.png-ec5b799ec5bf0f11673e9b2501edab7f.ctex"
+uid="uid://cr6tw11wijxe5"
+path="res://.godot/imported/bird-shadow-02.svg-7df09d873c5b4b595103a9546ef1ce11.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://doodle-011.png"
-dest_files=["res://.godot/imported/doodle-011.png-ec5b799ec5bf0f11673e9b2501edab7f.ctex"]
+source_file="res://assets/birdshadow/bird-shadow-02.svg"
+dest_files=["res://.godot/imported/bird-shadow-02.svg-7df09d873c5b4b595103a9546ef1ce11.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

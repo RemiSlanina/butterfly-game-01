@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cio0c3j1nv4kd"]
 
-[ext_resource type="Script" uid="uid://cwqt7xi7cs8fs" path="res://flowers/flower.gd" id="1_i6lw5"]
-[ext_resource type="Texture2D" uid="uid://c1d8uj5v5e7nu" path="res://flower-01-140x140.svg" id="2_i6lw5"]
+[ext_resource type="Script" uid="uid://cwqt7xi7cs8fs" path="res://assets/flowers/flower.gd" id="1_i6lw5"]
+[ext_resource type="Texture2D" uid="uid://cy8flslwknope" path="res://assets/flowers/flower-01-140x140.svg" id="2_i6lw5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qiop2"]
 radius = 60.972126

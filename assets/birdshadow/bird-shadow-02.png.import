@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://h5teyu0gupn"
-path="res://.godot/imported/scene-1200x700-far-background.png-fa7007a0e7e518ea49fa5bfdd71fdb06.ctex"
+uid="uid://bmw6q8qhar56i"
+path="res://.godot/imported/bird-shadow-02.png-0da30f7e314ab2b79c5281c623859e21.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scene-1200x700-far-background.png"
-dest_files=["res://.godot/imported/scene-1200x700-far-background.png-fa7007a0e7e518ea49fa5bfdd71fdb06.ctex"]
+source_file="res://assets/birdshadow/bird-shadow-02.png"
+dest_files=["res://.godot/imported/bird-shadow-02.png-0da30f7e314ab2b79c5281c623859e21.ctex"]
 
 [params]
 

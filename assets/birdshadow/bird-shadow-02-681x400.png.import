@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jve1nibr2wx4"
-path="res://.godot/imported/bird-shadow-02.png-103fffc66622b2ba270b23a6ee4e716f.ctex"
+uid="uid://decnuxb0x4fpb"
+path="res://.godot/imported/bird-shadow-02-681x400.png-e7a56d9e2967625056fbb9fcae08c2e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bird-shadow-02.png"
-dest_files=["res://.godot/imported/bird-shadow-02.png-103fffc66622b2ba270b23a6ee4e716f.ctex"]
+source_file="res://assets/birdshadow/bird-shadow-02-681x400.png"
+dest_files=["res://.godot/imported/bird-shadow-02-681x400.png-e7a56d9e2967625056fbb9fcae08c2e4.ctex"]
 
 [params]
 
