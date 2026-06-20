@@ -126,11 +126,11 @@ sprite_frames = SubResource("SpriteFrames_hqtel")
 animation = &"fly"
 autoplay = "fly"
 
-[node name="Area2D" type="Area2D" parent="Butterfly"]
+[node name="Area2D" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Butterfly/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 rotation = 1.601002
 shape = SubResource("CapsuleShape2D_sweqy")
 
-[connection signal="area_entered" from="Butterfly/Area2D" to="." method="_on_area_2d_area_entered"]
-[connection signal="area_exited" from="Butterfly/Area2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
