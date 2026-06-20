@@ -3,10 +3,11 @@ extends Node2D
 
 signal danger_started 
 signal danger_ended 
+var direction := Vector2.UP 
 @export var speed := 140.0 
 
 func _process(delta: float) -> void:
-	position.y -= speed * delta
+	position += direction * speed * delta
 	
 	#auto destruction: y-axis: 
 	# moving down 
@@ -19,4 +20,7 @@ func _process(delta: float) -> void:
 	
 func _ready() -> void:
 	print("Bird ready")
+	direction = Vector2.UP.rotated(randf_range(-0.4, 0.4)) # TODO: rotate sprite 
 	danger_started.emit()
+
+# ********* helper functions  *********  

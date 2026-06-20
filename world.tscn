@@ -45,3 +45,8 @@ amount = 20
 texture = ExtResource("5_036b0")
 lifetime = 8.0
 process_material = SubResource("ParticleProcessMaterial_aqk2v")
+
+[node name="BirdTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="BirdTimer" to="." method="_on_bird_timer_timeout"]
