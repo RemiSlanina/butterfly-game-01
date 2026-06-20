@@ -16,11 +16,13 @@ func _process(delta: float) -> void:
 	if position.y < -200:
 		danger_ended.emit() 
 		queue_free() # destroys itself 
-		
+	
+
 	
 func _ready() -> void:
 	print("Bird ready")
-	direction = Vector2.UP.rotated(randf_range(-0.4, 0.4)) # TODO: rotate sprite 
+	direction = Vector2.UP.rotated(randf_range(-0.5, 0.5)) # TODO: rotate sprite 
+	rotation = direction.angle() + deg_to_rad(90)
 	danger_started.emit()
 
 # ********* helper functions  *********  
