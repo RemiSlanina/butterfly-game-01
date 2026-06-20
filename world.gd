@@ -1,7 +1,7 @@
 extends Node2D 
 
 @export var bird_scene : PackedScene 
-@onready var butterfly = $Butterfly
+@onready var player = $Player
 
 func spawn_bird(): 
 	print("spawning bird...")
@@ -19,9 +19,9 @@ func _process(delta: float) -> void:
 
 func _on_danger_started(): 
 	print("Danger!") 
-	butterfly.in_danger = true 
+	player.in_danger = true 
 	
 	
 func _on_danger_ended(): 
 	print("Save!") 
-	butterfly.in_danger = false 
+	player.in_danger = false 

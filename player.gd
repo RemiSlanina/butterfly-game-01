@@ -1,7 +1,9 @@
-extends AnimatedSprite2D
+extends Node2D
 
-## DEPRECATED!!!! 
+## player.tscn contains an AnimatedSprite2D called Butterfly 
 
+# TODO: update like: sprite.stop() instead of stop() 
+@onready var sprite := $Butterfly
 @export var acceleration := 400.0
 @export var max_speed := 250.0
 #@export var panic_max_speed := 500.0
@@ -37,13 +39,13 @@ func _process(delta):
 		is_hiding = false
 		
 	if is_hiding: 
-		modulate.a = 0.5
-		stop()
-		# modulate.a => opacity 
+		sprite.modulate.a = 0.5
+		sprite.stop()
+		# sprite.modulate.a => opacity 
 	else: 
-		modulate.a = 1.0 
-		if not is_playing():
-			play("fly")
+		sprite.modulate.a = 1.0 
+		if not sprite.is_playing():
+			sprite.play("fly")
 	
 	# direction with WSAD KEYS: 
 	if Input.is_key_pressed(KEY_W):
@@ -68,11 +70,11 @@ func _process(delta):
 		current_acceleration *= 1.8 
 		current_max_speed *= 2.5 
 	
-		if animation != "panic_flutter":
-			play("panic_flutter")
+		if sprite.animation != "panic_flutter":
+			sprite.play("panic_flutter")
 	else:
-		if animation != "fly":
-			play("fly")
+		if sprite.animation != "fly":
+			sprite.play("fly")
 		
 	# accelerate
 	if input_direction != Vector2.ZERO:

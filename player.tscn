@@ -1,65 +1,65 @@
-[gd_scene load_steps=19 format=3 uid="uid://cudf42yb8srvp"]
+[gd_scene load_steps=19 format=3 uid="uid://dik2kw1uriqof"]
 
-[ext_resource type="Texture2D" uid="uid://dxw2d3jw6r84x" path="res://assets/butterfly/Butterfly-Sprite-01.svg" id="1_fn0p1"]
-[ext_resource type="Script" uid="uid://dai4hs8f2tgl7" path="res://butterfly.gd" id="2_tstti"]
+[ext_resource type="Script" uid="uid://dxiainxo03116" path="res://player.gd" id="1_i3pqv"]
+[ext_resource type="Texture2D" uid="uid://w43bgpv2lko" path="res://assets/butterfly/Butterfly-Sprite-01.svg" id="2_i3pqv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tlwt5"]
-atlas = ExtResource("1_fn0p1")
+atlas = ExtResource("2_i3pqv")
 region = Rect2(600, 160, 100, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aqk2v"]
-atlas = ExtResource("1_fn0p1")
+atlas = ExtResource("2_i3pqv")
 region = Rect2(500, 160, 100, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_036b0"]
-atlas = ExtResource("1_fn0p1")
+atlas = ExtResource("2_i3pqv")
 region = Rect2(300, 160, 100, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dwbse"]
-atlas = ExtResource("1_fn0p1")
+atlas = ExtResource("2_i3pqv")
 region = Rect2(100, 160, 100, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pkg7o"]
-atlas = ExtResource("1_fn0p1")
+atlas = ExtResource("2_i3pqv")
 region = Rect2(400, 160, 100, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gbfbk"]
-atlas = ExtResource("1_fn0p1")
+atlas = ExtResource("2_i3pqv")
 region = Rect2(200, 160, 100, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ioo17"]
-atlas = ExtResource("1_fn0p1")
+atlas = ExtResource("2_i3pqv")
 region = Rect2(0, 160, 100, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wse8f"]
-atlas = ExtResource("1_fn0p1")
+atlas = ExtResource("2_i3pqv")
 region = Rect2(0, 80, 100, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ic0uy"]
-atlas = ExtResource("1_fn0p1")
+atlas = ExtResource("2_i3pqv")
 region = Rect2(100, 80, 100, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k3n1d"]
-atlas = ExtResource("1_fn0p1")
+atlas = ExtResource("2_i3pqv")
 region = Rect2(200, 80, 100, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2o6r5"]
-atlas = ExtResource("1_fn0p1")
+atlas = ExtResource("2_i3pqv")
 region = Rect2(300, 80, 100, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_70uel"]
-atlas = ExtResource("1_fn0p1")
+atlas = ExtResource("2_i3pqv")
 region = Rect2(400, 80, 100, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hiqwa"]
-atlas = ExtResource("1_fn0p1")
+atlas = ExtResource("2_i3pqv")
 region = Rect2(600, 80, 100, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2u3nc"]
-atlas = ExtResource("1_fn0p1")
+atlas = ExtResource("2_i3pqv")
 region = Rect2(500, 80, 100, 80)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_hocdr"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_hqtel"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -114,25 +114,23 @@ animations = [{
 "speed": 28.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i02rf"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sweqy"]
 radius = 19.026306
 height = 57.819855
 
-[node name="Butterfly" type="Node2D"]
-script = ExtResource("2_tstti")
+[node name="Player" type="Node2D"]
+script = ExtResource("1_i3pqv")
 
 [node name="Butterfly" type="AnimatedSprite2D" parent="."]
-position = Vector2(264, 275)
-sprite_frames = SubResource("SpriteFrames_hocdr")
+sprite_frames = SubResource("SpriteFrames_hqtel")
 animation = &"fly"
 autoplay = "fly"
-script = ExtResource("2_tstti")
 
 [node name="Area2D" type="Area2D" parent="Butterfly"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Butterfly/Area2D"]
 rotation = 1.601002
-shape = SubResource("CapsuleShape2D_i02rf")
+shape = SubResource("CapsuleShape2D_sweqy")
 
-[connection signal="area_entered" from="Butterfly/Area2D" to="Butterfly" method="_on_area_2d_area_entered"]
-[connection signal="area_exited" from="Butterfly/Area2D" to="Butterfly" method="_on_area_2d_area_exited"]
+[connection signal="area_entered" from="Butterfly/Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Butterfly/Area2D" to="." method="_on_area_2d_area_exited"]
